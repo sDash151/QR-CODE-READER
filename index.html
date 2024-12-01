@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Reader</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <div class="content">
+      <h1>QR Code Reader</h1>
+      <div id="reader" class="qr-reader"></div>
+      <button id="upload" class="btn">Upload QR Code</button>
+      <input type="file" id="file-input" accept="image/*" hidden >
+      <div id="result" class="result-box">Scan a QR Code or Upload an Image</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
